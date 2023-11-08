@@ -28,35 +28,35 @@ let quotes = [
     source:"Plato",
     citation: null,
     year: null,
-    context: 'Read by Leonard Nimoy in the video game Civilization 4'
+    context: '(Read by Leonard Nimoy in the video game Civilizations 4)'
   },
   {
     quote:"Chemistry means the difference between poverty and starvation and the abundant life.",
     source:"Robert Brent",
     citation: null,
     year: null,
-    context: 'Read by Leonard Nimoy in the video game Civilization 4'
+    context: null
   },
   {
     quote:"No freeman shall be taken, imprisoned, or in any other way destroyed, except by the lawful judgment of his peers.",
     source:null,
     citation: "The Magna Carta",
     year: null,
-    context: 'Read by Leonard Nimoy in the video game Civilization 4'
+    context: null
   },
   {
     quote:"Corporation, n. An ingenious device for obtaining individual profit without individual responsibility.",
     source:"Ambrose Bierce",
-    citation: null,
-    year: null,
-    context: 'Read by Leonard Nimoy in the video game Civilization 4'
+    citation: "The Devil's Dictionary",
+    year: "1911",
+    context: null
   },
   {
     quote:"It has been said that democracy is the worst form of government except all the others that have been tried.",
     source:"Winston Churchill",
     citation: null,
     year: null,
-    context: 'Read by Leonard Nimoy in the video game Civilization 4'
+    context: null
   }
 ];
 
@@ -112,6 +112,11 @@ function printQuote(){
   //if there is a year, add it to the HTML
   if(q.year){
     s += `\n  <span class="year">${q.year}</span>`
+  }
+
+  //if there is a year, add it to the HTML
+  if(q.context){
+    s += `\n  <span class="context">${q.context}</span>`
   }
 
   //conditional logic to make the final text block formatted correctly re: line breaks
