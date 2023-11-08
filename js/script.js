@@ -83,7 +83,7 @@ function getRandomQuote(){
 function randomizeBackgroundColor(){
   let colors = ['green','blue','red','orange','yellow','purple'];
   let random_color = colors[Math.floor(Math.random() * colors.length)];
-  document.getElementById('quote-box').style.backgroundColor = random_color;
+  document.body.style.backgroundColor = random_color;
 }
 
 function printQuote(){
